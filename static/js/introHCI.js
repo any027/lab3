@@ -45,10 +45,12 @@ function projectClick(e) {
 
 function changeProject(e) {
    var projectID = $('#project').val();
+   
    $(projectID).animate({
       width: $('#width').val()
    });
 
    var newDescription = $('#description').val();
    $(projectID + " .project-description").text(newDescription);
+
 }
